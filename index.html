@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vanilla JS SPA Router</title>
+
+    <script defer type="module" src="/dist/index.js"></script>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+
+      body {
+        padding-left: 1rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 10rem 1fr;
+        gap: 1rem;
+      }
+
+      aside {
+        border-right: 2px solid #ddd;
+      }
+
+      aside ul {
+        list-style: none;
+      }
+
+      aside ul li {
+        padding: 0.3rem;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 1rem;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Vanilla JS SPA Router</h1>
+    <main>
+      <aside>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+
+          <li>
+            <a href="/products">Products</a>
+
+            <ul>
+              <li>
+                <a href="/products/451/details">HC 23i</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="/about">About</a>
+          </li>
+
+          <li>
+            <a href="/missing">Missing route</a>
+          </li>
+        </ul>
+      </aside>
+
+      <section id="route"></section>
+    </main>
+
+    <footer>
+      Proudly written as
+      <a target="_blank" href="https://github.com/mvneerven/vanillarouter"
+        >open source</a
+      >
+      by
+      <a href="https://neerventure.com" target="_blank">Neerventure</a>
+    </footer>
+  </body>
+</html>
